@@ -39,45 +39,6 @@ To refresh the catalog later:
 /plugin marketplace update pdmartins
 ```
 
-## Moving from the old marketplace
-
-The `pdmartins` marketplace used to live in
-[pdmartins/rules-by-trigger](https://github.com/pdmartins/rules-by-trigger).
-If you added it from there, move to this repository. The marketplace name and
-the install names stay the same.
-
-Claude Code registers one marketplace per name, so remove the old one first:
-
-```
-/plugin marketplace remove pdmartins
-/plugin marketplace add pdmartins/claude-plugins
-/plugin install rules-by-trigger@pdmartins
-/reload-plugins
-```
-
-Removing the marketplace also uninstalls the plugins you installed from it, so
-`rules-by-trigger` goes away with the first line and comes back with the third.
-Your rules are not touched: they live in `~/.claude/rules-by-trigger/` and in
-each project's `.claude/rules-by-trigger/`, outside the plugin. The plugin's
-data directory does go: it holds which rules each session already received, so
-a session that was open during the move may get a rule injected once more.
-
-If a settings file (`~/.claude/settings.json` or a project's
-`.claude/settings.json`) declares `pdmartins` under `extraKnownMarketplaces`,
-change its source there too. Claude Code fetches the marketplace again when its
-source changes in settings:
-
-```json
-"extraKnownMarketplaces": {
-  "pdmartins": {
-    "source": { "source": "github", "repo": "pdmartins/claude-plugins" }
-  }
-}
-```
-
-To check the move, run `/plugin marketplace list`: `pdmartins` should point at
-`pdmartins/claude-plugins`.
-
 ## License
 
 [MIT](LICENSE)
