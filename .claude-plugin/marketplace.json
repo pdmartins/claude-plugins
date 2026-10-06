@@ -34,7 +34,7 @@
     },
     {
       "name": "chat-frames",
-      "description": "Frames each user prompt (blue) and assistant reply block (terracotta) in the transcript with a timestamped top rule, a closing rule and a dark tinted background.",
+      "description": "Frames each user prompt (blue) and assistant reply (terracotta) in the transcript with a labeled top rule, a closing rule and a tinted background for light or dark themes. Configurable through a JSON file.",
       "source": {
         "source": "git-subdir",
         "url": "pdmartins/chat-frames",
@@ -45,6 +45,14 @@
         "url": "https://github.com/pdmartins"
       },
       "license": "MIT",
+      "keywords": [
+        "transcript",
+        "chat",
+        "ui",
+        "theme",
+        "frames"
+      ],
+      "category": "productivity",
       "homepage": "https://github.com/pdmartins/chat-frames",
       "repository": "https://github.com/pdmartins/chat-frames"
     }
