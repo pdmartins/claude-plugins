@@ -29,9 +29,11 @@ claude plugin install rules-by-trigger@pdmartins
 claude plugin install chat-frames@pdmartins
 ```
 
-A plugin installed in a running session takes effect after `/reload-plugins`.
+Inside Claude Code, `/plugin install` opens the plugin's details in the
+`/plugin` panel, where you confirm the install. A plugin installed in a running
+session takes effect after `/reload-plugins`.
 
-To fetch the latest catalog and plugin versions later:
+To refresh the catalog later:
 
 ```
 /plugin marketplace update pdmartins
@@ -44,8 +46,7 @@ The `pdmartins` marketplace used to live in
 If you added it from there, move to this repository. The marketplace name and
 the install names stay the same.
 
-Claude Code keeps one marketplace per name, so adding this repository while the
-old one is still registered does nothing. Remove the old one first:
+Claude Code registers one marketplace per name, so remove the old one first:
 
 ```
 /plugin marketplace remove pdmartins
