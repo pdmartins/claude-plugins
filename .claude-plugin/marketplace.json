@@ -13,7 +13,7 @@
       "source": {
         "source": "git-subdir",
         "url": "pdmartins/rules-by-trigger",
-        "path": "plugins/rules-by-trigger"
+        "path": "plugin"
       },
       "author": {
         "name": "Pedro Martins",
@@ -36,8 +36,9 @@
       "name": "chat-frames",
       "description": "Frames each user prompt (blue) and assistant reply block (terracotta) in the transcript with a timestamped top rule, a closing rule and a dark tinted background.",
       "source": {
-        "source": "github",
-        "repo": "pdmartins/chat-frames"
+        "source": "git-subdir",
+        "url": "pdmartins/chat-frames",
+        "path": "plugin"
       },
       "author": {
         "name": "Pedro Martins",

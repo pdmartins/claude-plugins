@@ -8,8 +8,8 @@ repositories, and each one carries its own version.
 
 | Plugin | What it does | Repository |
 |---|---|---|
-| `rules-by-trigger` | Path-scoped rules: markdown rules injected into context the moment Claude touches a file matching a glob, or loads a named skill. A scalable replacement for nested CLAUDE.md files. | [pdmartins/rules-by-trigger](https://github.com/pdmartins/rules-by-trigger) (folder `plugins/rules-by-trigger`) |
-| `chat-frames` | Frames each prompt and each reply in the transcript, with a timestamped top rule and a closing rule. | [pdmartins/chat-frames](https://github.com/pdmartins/chat-frames) |
+| `rules-by-trigger` | Path-scoped rules: markdown rules injected into context the moment Claude touches a file matching a glob, or loads a named skill. A scalable replacement for nested CLAUDE.md files. | [pdmartins/rules-by-trigger](https://github.com/pdmartins/rules-by-trigger) (folder `plugin`) |
+| `chat-frames` | Frames each prompt and each reply in the transcript, with a timestamped top rule and a closing rule. | [pdmartins/chat-frames](https://github.com/pdmartins/chat-frames) (folder `plugin`) |
 
 ## Install
 
