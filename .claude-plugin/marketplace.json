@@ -1,0 +1,51 @@
+{
+  "name": "pdmartins",
+  "description": "Pedro Martins' Claude Code plugins. Currently: rules-by-trigger (path-scoped rules injected into context) and chat-frames (frames around each prompt and reply in the transcript).",
+  "owner": {
+    "name": "Pedro Martins",
+    "url": "https://github.com/pdmartins"
+  },
+  "plugins": [
+    {
+      "name": "rules-by-trigger",
+      "displayName": "Rules by Trigger",
+      "description": "Path-scoped rules for Claude Code: markdown rules auto-injected into context the moment Claude touches a file matching a glob, or loads a named skill. A scalable replacement for nested CLAUDE.md files.",
+      "source": {
+        "source": "git-subdir",
+        "url": "pdmartins/rules-by-trigger",
+        "path": "plugins/rules-by-trigger"
+      },
+      "author": {
+        "name": "Pedro Martins",
+        "url": "https://github.com/pdmartins"
+      },
+      "license": "MIT",
+      "keywords": [
+        "rules",
+        "context",
+        "hooks",
+        "claude-md",
+        "path-scoped",
+        "context-engineering"
+      ],
+      "category": "workflow",
+      "homepage": "https://github.com/pdmartins/rules-by-trigger",
+      "repository": "https://github.com/pdmartins/rules-by-trigger"
+    },
+    {
+      "name": "chat-frames",
+      "description": "Frames each user prompt (blue) and assistant reply block (terracotta) in the transcript with a timestamped top rule, a closing rule and a dark tinted background.",
+      "source": {
+        "source": "github",
+        "repo": "pdmartins/chat-frames"
+      },
+      "author": {
+        "name": "Pedro Martins",
+        "url": "https://github.com/pdmartins"
+      },
+      "license": "MIT",
+      "homepage": "https://github.com/pdmartins/chat-frames",
+      "repository": "https://github.com/pdmartins/chat-frames"
+    }
+  ]
+}
