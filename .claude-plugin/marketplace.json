@@ -12,7 +12,7 @@
       "description": "Path-scoped rules for Claude Code: markdown rules auto-injected into context the moment Claude touches a file matching a glob, or loads a named skill. A scalable replacement for nested CLAUDE.md files.",
       "source": {
         "source": "git-subdir",
-        "url": "pdmartins/rules-by-trigger",
+        "url": "https://github.com/pdmartins/rules-by-trigger.git",
         "path": "plugin"
       },
       "author": {
@@ -37,7 +37,7 @@
       "description": "Frames each user prompt (blue) and assistant reply (terracotta) in the transcript with a labeled top rule, a closing rule and a tinted background for light or dark themes. Configurable through a JSON file.",
       "source": {
         "source": "git-subdir",
-        "url": "pdmartins/chat-frames",
+        "url": "https://github.com/pdmartins/chat-frames.git",
         "path": "plugin"
       },
       "author": {
